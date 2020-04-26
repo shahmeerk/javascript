@@ -1,1 +1,62 @@
-styles
+.sketch{
+    background-color: black;
+}
+.mainContainer{
+    width: 100%;
+}
+
+.calculator{
+    margin: 0 auto;
+    width: 304px;
+    border: solid;
+}
+
+.currValue{
+    width: 300px;
+    box-sizing: border-box;
+    margin: 2px;
+    border: solid;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 36px;
+    text-align: left;
+}
+.heading1{
+    font-family: 'Squada One', cursive;
+    font-size: 60px;
+    text-align: center;
+    display: inline;
+}
+
+.heading2{
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
+    text-align: center;
+    display: inline;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+}
+
+.button{
+    font-family: 'Squada One', cursive;
+    font-size: 14px;
+    width: 24%;
+    height: 50px;
+    margin-block: 4px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.bar{
+    text-align: center;
+    width: 100%;
+}
+
+.input{
+    width: 30px;
+    box-sizing: border-box;
+}
+

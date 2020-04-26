@@ -1,1 +1,48 @@
-html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header" class="header">
+    <a class="heading1">
+      Project: Calculator
+    </a>
+  </div>
+  <div id="header" class="header">
+      <a class="heading2">
+        Made by Shahmeer Khan
+      </a>
+  </div>
+
+  <br>
+  <div id="mainContainer" class="mainContainer"> 
+    <div id="calculator" class="calculator">
+        <input id="currValue" class="currValue" type="text" name="currValue" class="input" onclick="clear()">
+        <button onclick="putOnDisplay('7')" class="button">7</button>
+        <button onclick="putOnDisplay('8')" class="button">8</button>
+        <button onclick="putOnDisplay('9')" class="button">9</button>
+        <button onclick="storeVal('mul')" class="button">*</button>
+        <button onclick="putOnDisplay('4')" class="button">4</button>
+        <button onclick="putOnDisplay('5')" class="button">5</button>
+        <button onclick="putOnDisplay('6')" class="button">6</button>
+        <button onclick="storeVal('sub')" class="button">-</button>
+        <button onclick="putOnDisplay('1')" class="button">1</button>
+        <button onclick="putOnDisplay('2')" class="button">2</button>
+        <button onclick="putOnDisplay('3')" class="button">3</button>
+        <button onclick="storeVal('add')" class="button">+</button>
+        <button onclick="putPoint()" class="button">.</button>
+        <button onclick="putOnDisplay('0')" class="button">0</button>
+        <button onclick="storeVal('div')" class="button">/</button>
+        <button onclick="calculate()" class="button">=</button>
+    </div>  
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
