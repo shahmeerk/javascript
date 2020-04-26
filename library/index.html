@@ -11,7 +11,7 @@
 <body>
   <div id="header" class="header">
     <a class="heading1">
-      Project: Calculator
+      Project: Library
     </a>
   </div>
   <div id="header" class="header">
@@ -21,26 +21,33 @@
   </div>
 
   <br>
-  <div id="mainContainer" class="mainContainer"> 
-    <div id="calculator" class="calculator">
-        <input id="currValue" class="currValue" type="text" name="currValue" class="input" onclick="clear()">
-        <button onclick="putOnDisplay('7')" class="button">7</button>
-        <button onclick="putOnDisplay('8')" class="button">8</button>
-        <button onclick="putOnDisplay('9')" class="button">9</button>
-        <button onclick="storeVal('mul')" class="button">*</button>
-        <button onclick="putOnDisplay('4')" class="button">4</button>
-        <button onclick="putOnDisplay('5')" class="button">5</button>
-        <button onclick="putOnDisplay('6')" class="button">6</button>
-        <button onclick="storeVal('sub')" class="button">-</button>
-        <button onclick="putOnDisplay('1')" class="button">1</button>
-        <button onclick="putOnDisplay('2')" class="button">2</button>
-        <button onclick="putOnDisplay('3')" class="button">3</button>
-        <button onclick="storeVal('add')" class="button">+</button>
-        <button onclick="putPoint()" class="button">.</button>
-        <button onclick="putOnDisplay('0')" class="button">0</button>
-        <button onclick="storeVal('div')" class="button">/</button>
-        <button onclick="calculate()" class="button">=</button>
-    </div>  
+
+  <div id="mainContainer" class="mainContainer">
+      <div id="addBox" class="addBox">
+        <br>
+
+        <input id="titleInput" type="text" name="titleInput" placeholder="Title" class="input">
+        <br>
+        <input id="authorInput" type="text" name="authorInput" placeholder="Author" class="input">
+        <br>
+        <div class="input">
+            <a class="heading3"> Read?</a>
+        <input id="readInput" type="checkbox" name="readInput" >
+        </div>
+        
+        <br>
+        <button onclick="addBook()" class="heading2" style="display: block; margin: auto; width: 40%;">
+            Add Book
+        </button>
+        <br>
+      </div>
+
+      <br>
+      
+      <div id="libraryView" class="libraryView">
+
+      </div>
+
   </div>
   <script src="script.js"></script>
 </body>
